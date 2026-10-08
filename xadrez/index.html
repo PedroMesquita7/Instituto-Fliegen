@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início — Xadrez Fliegen</title>
+  <meta name="description" content="Aprenda e treine xadrez com o Instituto Fliegen: aulas práticas passo a passo, regras, problemas de xeque-mate e partidas contra o computador.">
+  <meta name="theme-color" content="#036E96">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css?v=3">
+  <script src="js/comum.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <div id="barra-acess"></div>
+
+  <header class="topo">
+    <div class="topo-interno">
+      <a class="logo-link" href="../index.html" aria-label="Instituto Fliegen — site do Instituto">
+        <img src="assets/logo-fliegen.png" alt="Logo do Instituto Fliegen" width="720" height="252">
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a class="voltar-site" href="../index.html">← Site do Instituto</a></li>
+          <li><a href="index.html">Xadrez</a></li>
+          <li><a href="aulas.html">Aulas práticas</a></li>
+          <li><a href="regras.html">Regras</a></li>
+          <li><a href="treinar.html">Treinar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="conteudo" tabindex="-1">
+    <section class="heroi">
+      <h1>Aprenda e treine xadrez</h1>
+      <p class="lead">Um site de apoio aos alunos do Instituto Fliegen: aprenda com aulas práticas, passo a passo, e depois treine com problemas, contra o computador ou em dupla com um colega. Funciona bem no celular.</p>
+      <div class="botoes"><a class="btn" href="aulas.html">Começar as aulas →</a></div>
+    </section>
+
+    <div class="grade-cartoes">
+      <a class="cartao-link" href="aulas.html">
+        <span class="icone" aria-hidden="true">🎓</span>
+        <strong>Aulas práticas</strong>
+        <span>Uma trilha com 19 aulas: as peças, capturar, defender, xeque-mate, roque, en passant e táticas.</span>
+      </a>
+      <a class="cartao-link" href="treinar.html">
+        <span class="icone" aria-hidden="true">🧩</span>
+        <strong>Treinar</strong>
+        <span>Problemas de mate em 1 e mate em 2, partidas contra o computador e jogo em dupla, com dicas.</span>
+      </a>
+      <a class="cartao-link" href="regras.html">
+        <span class="icone" aria-hidden="true">📘</span>
+        <strong>Regras</strong>
+        <span>Todas as regras num só lugar, com exemplos que você pode tocar e mover. Bom para consultar.</span>
+      </a>
+    </div>
+
+    <section class="cartao" aria-labelledby="por-onde">
+      <h2 id="por-onde" style="margin-top:0">Por onde começar?</h2>
+      <ol>
+        <li>Faça as <a href="aulas.html">Aulas práticas</a> na ordem: primeiro as peças, depois os fundamentos.</li>
+        <li>Quando terminar um módulo, vá para <a href="treinar.html">Treinar</a> e resolva os problemas de <strong>Mate em 1</strong>.</li>
+        <li>Depois, tente os <strong>Mate em 2</strong>, jogue contra o computador ou <strong>em dupla</strong> com um colega.</li>
+        <li>Ficou com dúvida em alguma regra? Consulte a página <a href="regras.html">Regras</a>.</li>
+      </ol>
+      <p><strong>Como mover:</strong> toque (ou clique) na peça e depois na casa para onde ela vai. As casas marcadas mostram os lances possíveis.</p>
+    </section>
+
+    <section class="cartao" aria-labelledby="para-todos">
+      <h2 id="para-todos" style="margin-top:0">Pensado para todos</h2>
+      <p>Este site segue os sete princípios do Desenho Universal:</p>
+      <ul>
+        <li><strong>Igualitário:</strong> é gratuito, sem cadastro e sem senha. Todos usam do mesmo jeito.</li>
+        <li><strong>Adaptável:</strong> você pode aumentar o texto, ligar o alto contraste e usar toque, mouse ou teclado (setas e Enter).</li>
+        <li><strong>Intuitivo:</strong> frases curtas, o mesmo menu em todas as páginas e passo a passo.</li>
+        <li><strong>Informação de fácil percepção:</strong> as cores nunca são a única pista; cada casa tem um nome que leitores de tela anunciam.</li>
+        <li><strong>Tolerância ao erro:</strong> errou um lance nos problemas? O tabuleiro volta e você tenta de novo, sem punição.</li>
+        <li><strong>Baixo esforço físico:</strong> basta tocar a peça e a casa. Os botões são grandes.</li>
+        <li><strong>Dimensão e espaço:</strong> tudo se ajusta à tela do celular, do tablet ou do computador.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-interno">
+      <p><strong>Xadrez Fliegen</strong> — site de apoio aos alunos do Instituto Fliegen. Gratuito, sem cadastro e sem coleta de dados pessoais.</p>
+      <p>Desenvolvido por Pedro Marques Mesquita, voluntário do Instituto Fliegen, como Atividade Extensionista do curso de Análise e Desenvolvimento de Sistemas (UNINTER). Objetivos de Desenvolvimento Sustentável: ODS 4 (Educação de Qualidade) e ODS 10 (Redução das Desigualdades).</p>
+      <p>Os lances são validados com a biblioteca chess.js (licença BSD-2).</p>
+      <p><a href="../index.html">Voltar ao site do Instituto Fliegen</a> · <a href="../index.html#contato">Contato</a></p>
+    </div>
+  </footer>
+
+  <script src="vendor/chess.min.js"></script>
+  <script src="js/logica.js"></script>
+  <script src="js/tabuleiro.js"></script>
+</body>
+</html>

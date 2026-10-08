@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="sem-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Fliegen — Olimpíadas do Conhecimento em Cotia/SP</title>
+  <meta name="description" content="O Instituto Fliegen é um projeto educacional social, sem fins lucrativos, que prepara estudantes de escolas públicas de Cotia e região para as Olimpíadas do Conhecimento. Conheça o programa, as conquistas e as aulas práticas de xadrez.">
+  <meta name="theme-color" content="#036E96">
+  <meta property="og:title" content="Instituto Fliegen">
+  <meta property="og:description" content="Preparando estudantes de escolas públicas de Cotia para as Olimpíadas do Conhecimento.">
+  <meta property="og:image" content="assets/img/capa-apresentacao.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=6">
+  <script>document.documentElement.classList.remove('sem-js');</script>
+</head>
+<body>
+<!-- Ícones (linhas simples, desenhados para este site) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-luz" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2V1M4.2 4.2l-.7-.7M19.8 4.2l.7-.7"/></symbol>
+    <symbol id="i-mochila" viewBox="0 0 24 24"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M8 10h8"/></symbol>
+    <symbol id="i-capelo" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-equipe" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-medalha" viewBox="0 0 24 24"><path d="M7.2 2h3.6l3 6"/><path d="M16.8 2h-3.6l-1.3 2.6"/><circle cx="12" cy="15" r="6"/><path d="m12 12 .9 1.9 2.1.3-1.5 1.4.4 2.1-1.9-1-1.9 1 .4-2.1L9 14.2l2.1-.3Z"/></symbol>
+    <symbol id="i-atomo" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2-2 0-7.4-4.5-11.9S5.8 1.8 3.8 3.8s0 7.4 4.5 11.9 9.9 6.5 11.9 4.5Z"/><path d="M15.7 15.7c4.5-4.5 6.5-9.9 4.5-11.9s-7.4 0-11.9 4.5-6.5 9.9-4.5 11.9 7.4 0 11.9-4.5Z"/></symbol>
+    <symbol id="i-telescopio" viewBox="0 0 24 24"><path d="m10.1 4.7 9.8-2.6 1.6 6-9.8 2.6Z"/><path d="m4 9.6 6.1-1.6 1 3.8L5 13.4Z"/><path d="M2.6 10.1 4 9.6l1 3.8-1.4.5Z"/><path d="M13.5 12.5 17 22"/><path d="M10.5 13.3 7 22"/><path d="M12 14v8"/></symbol>
+    <symbol id="i-trofeu" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+    <symbol id="i-livro" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M9 7h7"/></symbol>
+    <symbol id="i-onibus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16"/><path d="M8 3v8M16 3v8" opacity=".0"/><path d="M6 18v3M18 18v3"/><circle cx="8" cy="14.5" r="1"/><circle cx="16" cy="14.5" r="1"/><path d="M2 8v3M22 8v3"/></symbol>
+    <symbol id="i-talher" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-coracao" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-aviao" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-estrela" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01Z"/></symbol>
+    <symbol id="i-degraus" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21v-5h4v5M10 21v-9h4v9M15 21V8h4v13"/><path d="M17 8V3l3 1.5L17 6"/></symbol>
+    <symbol id="i-foguete" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-predio" viewBox="0 0 24 24"><path d="M3 22h18"/><path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="M12 2 20 7H4Z"/></symbol>
+    <symbol id="i-filme" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18M17 3v18M3 7.5h4M3 12h18M3 16.5h4M17 7.5h4M17 16.5h4"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-robo" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol>
+    <symbol id="i-festa" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-baixar" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-1.8-1.1-.9.8a4 4 0 0 1-2.3-2.3l.8-.9-1.1-1.8Z"/></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pino" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  </defs>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="container topo-interno">
+    <a class="logo" href="#inicio" aria-label="Instituto Fliegen — início">
+      <img src="assets/img/logo-fliegen.png" alt="Instituto Fliegen" width="720" height="252">
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+      <svg class="ic"><use href="#i-menu"/></svg>
+    </button>
+    <nav class="nav" id="menu-principal" aria-label="Menu principal">
+      <ul>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#programa">Programa</a></li>
+        <li><a href="#processo">Processo seletivo</a></li>
+        <li><a href="#conquistas">Conquistas</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a class="xadrez-link" href="#xadrez">Xadrez</a></li>
+        <li><a class="torneios-link" href="xadrez/aulas.html">Aulas</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="btn btn-verde" href="https://fliegen.alphalumen.org.br" target="_blank" rel="noopener">Inscreva-se</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+  <!-- ============ HERÓI ============ -->
+  <section class="heroi" id="inicio">
+    <div class="container heroi-grade">
+      <div class="revelar">
+        <img class="libelula" src="assets/img/libelula.png" alt="" width="400" height="345">
+        <h1>Instituto <span>Fliegen</span></h1>
+        <p class="lead">Um projeto educacional social, sem fins lucrativos, que prepara estudantes de <strong>escolas públicas de Cotia e região</strong> para as <strong>Olimpíadas do Conhecimento</strong> e para voos cada vez mais altos.</p>
+        <div class="botoes">
+          <a class="btn btn-verde" href="https://fliegen.alphalumen.org.br" target="_blank" rel="noopener">Quero participar <svg class="ic"><use href="#i-seta"/></svg></a>
+          <a class="btn btn-contorno" href="downloads/apresentacao-instituto-fliegen-2025.pdf" download><svg class="ic"><use href="#i-baixar"/></svg> Baixar apresentação</a>
+        </div>
+        <ul class="heroi-numeros" aria-label="O Instituto em números">
+          <li><strong>2024</strong><span>início do projeto</span></li>
+          <li><strong>5</strong><span>olimpíadas disputadas</span></li>
+          <li><strong>14 de 18</strong><span>alunos na 2ª fase da OBRL</span></li>
+        </ul>
+      </div>
+      <div class="heroi-arte revelar" aria-hidden="true">
+        <div class="mosaico">
+          <i class="c-vazio"></i><i class="f-folha c-verde"></i><i class="f-circ c-marinho"></i><i class="f-qd-bl c-azul"></i>
+          <i class="f-qd-tr c-turq"></i><i class="f-qd-tl c-azul"></i><i class="f-folha2 c-verde"></i><i class="f-qd-br c-marinho"></i>
+          <i class="f-folha c-verde"></i><i class="f-qd-br c-marinho"></i><i class="f-qd-tl c-verde"></i><i class="f-circ c-turq"></i>
+          <i class="f-qd-tr c-azul"></i><i class="f-folha2 c-turq"></i><i class="f-qd-bl c-petro"></i><i class="c-vazio"></i>
+        </div>
+        <div class="selo">
+          <span class="bola"><svg class="ic"><use href="#i-aviao"/></svg></span>
+          <span><b>“Fliegen” significa “voar”</b><small>em alemão</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUEM SOMOS ============ -->
+  <section class="secao alt" id="quem-somos">
+    <div class="container quem">
+      <div class="quem-foto revelar">
+        <img src="assets/img/sala.jpg" alt="Sala de aula do Instituto Fliegen, com mesas e cadeiras" width="900" height="1342" loading="lazy">
+      </div>
+      <div class="quem-texto revelar">
+        <p class="sobretitulo">Quem somos</p>
+        <h2>Educação que dá asas</h2>
+        <p>O Instituto Fliegen é um <b>projeto educacional social, sem fins lucrativos</b>, criado para preparar estudantes para as <b>Olimpíadas do Conhecimento</b>, como OBMEP, OBA, Canguru, entre outras competições acadêmicas de destaque no país.</p>
+        <p>Nosso foco é desenvolver <b>habilidades cognitivas, pensamento crítico, autonomia intelectual e confiança</b>, estimulando a curiosidade científica e o raciocínio lógico. Acreditamos que o contato com desafios acadêmicos fortalece a formação dos alunos e amplia suas possibilidades de futuro.</p>
+        <p class="nota-nome">O nome <strong>“Fliegen”</strong> significa <strong>“voar”</strong> em alemão, simbolizando a aspiração de ver esses estudantes superarem seus limites e alcançarem grandes conquistas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OBJETIVOS ============ -->
+  <section class="secao" id="objetivos" style="overflow:hidden">
+    <div class="container">
+      <p class="sobretitulo">Nossos objetivos</p>
+      <h2>Quatro passos para voar</h2>
+      <div class="trilha">
+        <article class="cartao-verde revelar">
+          <svg class="ic" aria-hidden="true"><use href="#i-luz"/></svg>
+          <h3>Estimular</h3>
+          <p>Promover a aprendizagem por meio de desafios acadêmicos, fortalecendo o raciocínio lógico e ampliando o desenvolvimento educacional dos alunos.</p>
+        </article>
+        <article class="cartao-verde revelar">
+          <svg class="ic" aria-hidden="true"><use href="#i-mochila"/></svg>
+          <h3>Preparar</h3>
+          <p>Capacitar estudantes para participação em Olimpíadas do Conhecimento, desenvolvendo desempenho, disciplina e excelência acadêmica.</p>
+        </article>
+        <article class="cartao-verde revelar">
+          <svg class="ic" aria-hidden="true"><use href="#i-capelo"/></svg>
+          <h3>Orientar</h3>
+          <p>Guiar os alunos na construção de um percurso acadêmico sólido, preparando-os para o ensino superior e para o ambiente profissional.</p>
+        </article>
+        <article class="cartao-verde revelar">
+          <svg class="ic" aria-hidden="true"><use href="#i-equipe"/></svg>
+          <h3>Criar</h3>
+          <p>Fomentar um ambiente colaborativo que valoriza o trabalho em equipe, o respeito e a troca de conhecimento.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMA ============ -->
+  <section class="secao alt" id="programa">
+    <div class="container">
+      <div class="proposta">
+        <div class="revelar">
+          <p class="sobretitulo">O que propomos</p>
+          <h2>O que propomos?</h2>
+          <p class="subt">Um projeto de enriquecimento extracurricular, com foco em:</p>
+        </div>
+        <div class="cartoes-petro">
+          <article class="cartao-petro revelar">
+            <svg class="ic" aria-hidden="true"><use href="#i-medalha"/></svg>
+            <h3>Olimpíadas do conhecimento</h3>
+            <p>OBMEP, OBA, OIMC, OBT e outras competições.</p>
+          </article>
+          <article class="cartao-petro revelar">
+            <svg class="ic" aria-hidden="true"><use href="#i-atomo"/></svg>
+            <h3>Atividades STEAM</h3>
+            <p>Ciência, Tecnologia, Engenharia, Artes e Matemática.</p>
+          </article>
+          <article class="cartao-petro revelar">
+            <svg class="ic" aria-hidden="true"><use href="#i-telescopio"/></svg>
+            <h3>Exploração científica</h3>
+            <p>Robótica, astronomia e outras atividades científicas.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="faixa-verde revelar">
+        <h3>Quem pode<br>participar?</h3>
+        <p><strong>Estudantes de escolas públicas ou bolsistas (mínimo 50%)</strong> em escolas particulares, alunos do 6º ano ao Ensino Médio, ampliando o acesso a oportunidades acadêmicas de alto nível.</p>
+      </div>
+
+      <div class="oferece-grade" style="margin-top:5rem">
+        <div class="revelar">
+          <p class="sobretitulo">Benefícios</p>
+          <h2>O que oferecemos aos alunos?</h2>
+        </div>
+        <div class="cartoes-mini">
+          <div class="cartao-mini revelar"><svg class="ic" aria-hidden="true"><use href="#i-trofeu"/></svg>Participação em Olimpíadas</div>
+          <div class="cartao-mini revelar"><svg class="ic" aria-hidden="true"><use href="#i-livro"/></svg>Material Didático</div>
+          <div class="cartao-mini revelar"><svg class="ic" aria-hidden="true"><use href="#i-onibus"/></svg>Auxílio Transporte</div>
+          <div class="cartao-mini revelar"><svg class="ic" aria-hidden="true"><use href="#i-talher"/></svg>Auxílio Lanche</div>
+        </div>
+      </div>
+
+      <div class="faixa-verde revelar" id="horarios">
+        <h3>Horário<br>das aulas</h3>
+        <ul class="horarios">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-relogio"/></svg><b>Segundas e quartas:</b> 08h10 às 11h30</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-relogio"/></svg><b>Quartas e sextas:</b> 15h30 às 18h50</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESSO SELETIVO ============ -->
+  <section class="secao" id="processo">
+    <div class="container processo">
+      <div class="processo-arte revelar" aria-hidden="true">
+        <div class="mosaico">
+          <i class="f-qd-br c-aco"></i><i class="f-qd-bl c-turq"></i>
+          <i class="f-qd-tr c-verde"></i><i class="f-qd-tl c-petro"></i>
+          <i class="c-vazio"></i><i class="f-qd-tr c-aco"></i>
+          <i class="f-circ c-turq" style="transform:scale(.55)"></i><i class="f-qd-br c-verde"></i>
+        </div>
+      </div>
+      <div>
+        <p class="sobretitulo">Como entrar</p>
+        <h2>Processo seletivo</h2>
+        <p class="intro">A seleção acontece em quatro etapas. A primeira é feita on-line, pelo link de inscrição.</p>
+        <ol class="passos">
+          <li class="revelar"><div><h3>Avaliação on-line</h3><p>Prova com 10 questões de matemática e 10 de português, pelo link <a class="link-marca" href="https://fliegen.alphalumen.org.br" target="_blank" rel="noopener">fliegen.alphalumen.org.br</a></p></div></li>
+          <li class="revelar"><div><h3>Avaliação presencial</h3><p>Os melhores resultados avançam para a prova presencial no Instituto Fliegen.</p></div></li>
+          <li class="revelar"><div><h3>Oficina socioemocional</h3><p>Atividade de 1h30 conduzida pela psicóloga Gabriella Gigliotti (CRP 06/165856).</p></div></li>
+          <li class="revelar"><div><h3>Entrevista e documentação</h3><p>Validação socioeconômica com a assistente social.</p></div></li>
+        </ol>
+        <div class="botoes" style="margin-top:1.8rem">
+          <a class="btn btn-azul" href="https://fliegen.alphalumen.org.br" target="_blank" rel="noopener">Fazer a avaliação on-line <svg class="ic"><use href="#i-seta"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONQUISTAS ============ -->
+  <section class="secao alt" id="conquistas">
+    <div class="container">
+      <p class="sobretitulo">Nossa trajetória</p>
+      <h2>Conquistas de 2024 &amp; 2025</h2>
+      <ol class="linha-tempo">
+        <li class="revelar" style="--c:#33FB98"><span class="marco"><svg class="ic" aria-hidden="true"><use href="#i-coracao"/></svg></span><div class="txt"><time>02/2024</time><p>Criação do projeto</p></div></li>
+        <li class="revelar" style="--c:#59DD9B"><span class="marco"><svg class="ic" aria-hidden="true"><use href="#i-aviao"/></svg></span><div class="txt"><time>06/2024</time><p>1ª aula do Instituto Fliegen</p></div></li>
+        <li class="revelar" style="--c:#2CCBB9"><span class="marco"><svg class="ic" aria-hidden="true"><use href="#i-medalha"/></svg></span><div class="txt"><time>06/2024</time><p>2 primeiras medalhas: prata e bronze na OBA</p></div></li>
+        <li class="revelar" style="--c:#1199D4"><span class="marco"><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg></span><div class="txt"><time>03/2025</time><p>1ª medalha de honra ao mérito na prova Canguru de Matemática</p></div></li>
+        <li class="revelar" style="--c:#0566A8"><span class="marco"><svg class="ic" aria-hidden="true"><use href="#i-degraus"/></svg></span><div class="txt"><time>10/2025</time><p>14 de 18 alunos passaram para a segunda fase da OBRL</p></div></li>
+        <li class="revelar" style="--c:#036E96"><span class="marco"><svg class="ic" aria-hidden="true"><use href="#i-foguete"/></svg></span><div class="txt"><time>10/2025</time><p>1 aluno selecionado para a Seleção Internacional da OBA</p></div></li>
+      </ol>
+
+      <h3 style="font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800;margin-top:4.5rem">Detalhamento das olimpíadas</h3>
+      <div class="olimpiadas">
+        <article class="olimp revelar">
+          <div class="topo-olimp"><span class="sigla">OBA</span><span class="nome">Olimpíada Brasileira de Astronomia e Astronáutica</span></div>
+          <div class="corpo"><span class="dado">2 medalhas</span><p>6 participantes · 1 prata e 1 bronze (33,3%)</p></div>
+        </article>
+        <article class="olimp verde revelar">
+          <div class="topo-olimp"><span class="sigla">ONC</span><span class="nome">Olimpíada Nacional de Ciências</span></div>
+          <div class="corpo"><span class="dado">4 na 2ª fase</span><p>8 participantes · 4 avançaram para a segunda fase</p></div>
+        </article>
+        <article class="olimp revelar">
+          <div class="topo-olimp"><span class="sigla">OBRL</span><span class="nome">Olimpíada Brasileira de Raciocínio Lógico</span></div>
+          <div class="corpo"><span class="dado">3 medalhas</span><p>8 participantes · 1 prata e 2 bronzes, e todos avançaram de fase (37,5%)</p></div>
+        </article>
+        <article class="olimp verde revelar">
+          <div class="topo-olimp"><span class="sigla">OLITEF</span><span class="nome">Tesouros do Amanhã</span></div>
+          <div class="corpo"><span class="dado">3 medalhas</span><p>8 participantes · 1 prata, 2 bronzes e 3 honras ao mérito (75%)</p></div>
+        </article>
+        <article class="olimp revelar">
+          <div class="topo-olimp"><span class="sigla">OIMC</span><span class="nome">Olimpíada Internacional de Matemática e do Conhecimento</span></div>
+          <div class="corpo"><span class="dado">2 equipes</span><p>Ambas avançaram para a segunda fase</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ATIVIDADES ============ -->
+  <section class="secao" id="atividades">
+    <div class="container">
+      <p class="sobretitulo">Além das competições</p>
+      <h2>Oficinas e passeios</h2>
+      <p class="intro">O Instituto Fliegen oferece aos estudantes experiências transformadoras, incluindo oficinas, eventos e passeios educativos.</p>
+      <div class="oficinas">
+        <div class="oficina revelar"><svg class="ic" aria-hidden="true"><use href="#i-predio"/></svg><div><h3>Semana EAT</h3><p>Instituto Alpha Lumen: planetário, museus, laboratórios e palestras.</p></div></div>
+        <a class="oficina revelar" href="#xadrez"><span class="peca-xadrez" aria-hidden="true">♚</span><div><h3>Campeonato de Xadrez</h3><p>Organizado e disputado pelos estudantes.</p><span class="seta">Ver a área de xadrez →</span></div></a>
+        <div class="oficina revelar"><svg class="ic" aria-hidden="true"><use href="#i-filme"/></svg><div><h3>Cinema</h3><p>Filme <i>Perfekta – Uma Aventura da Escola de Gênios</i>.</p></div></div>
+        <div class="oficina revelar"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg><div><h3>Oficina de Fotografia</h3><p>Oficina de fotografia com Pedro Ivo Prates.</p></div></div>
+        <div class="oficina revelar"><svg class="ic" aria-hidden="true"><use href="#i-robo"/></svg><div><h3>Oficinas de Robótica</h3><p>Projeto Social de Robótica &amp; Matemática: estudantes como monitores na Escola Jardim do Engenho.</p></div></div>
+        <div class="oficina revelar"><svg class="ic" aria-hidden="true"><use href="#i-festa"/></svg><div><h3>Nutella Day</h3><p>Participação no evento Nutella Day.</p></div></div>
+      </div>
+
+      <div class="passeios">
+        <article class="passeio abelhas revelar">
+          <figure><img src="assets/img/cidade-abelhas.jpg" alt="Colagem de fotos dos alunos do Instituto Fliegen na Cidade das Abelhas" loading="lazy" width="1000" height="1288"><span class="etiqueta">Passeio educativo</span></figure>
+          <div class="corpo">
+            <h3>Cidade das Abelhas</h3>
+            <p class="sub">Biologia na prática</p>
+            <p>Visita educativa sobre a importância das abelhas na polinização e no equilíbrio ambiental. As crianças aprenderam sobre biologia, ecossistemas e preservação ambiental de forma divertida.</p>
+          </div>
+        </article>
+        <article class="passeio intelbras revelar">
+          <figure><img src="assets/img/intelbras.jpg" alt="Alunos do Instituto Fliegen com capacetes durante visita à Intelbras" loading="lazy" width="1100" height="983"><span class="etiqueta">Visita técnica</span></figure>
+          <div class="corpo">
+            <h3>Intelbras</h3>
+            <p class="sub">Tecnologia que transforma o futuro</p>
+            <p>Os alunos do Instituto Fliegen participaram de uma visita à Intelbras, empresa referência em tecnologia e inovação no Brasil.</p>
+          </div>
+        </article>
+        <article class="passeio eta revelar">
+          <figure><img src="assets/img/eta-3.jpg" alt="Alunos com capacetes observando a entrada de água na Estação de Tratamento" loading="lazy" width="900" height="866"><span class="etiqueta">Visita técnica</span></figure>
+          <div class="corpo">
+            <h3>ETA</h3>
+            <p class="sub">Estação de Tratamento de Água</p>
+            <p>Visita educativa para compreender como funciona o tratamento e a distribuição da água que chega às nossas casas.</p>
+            <div class="miniaturas">
+              <img src="assets/img/eta-1.jpg" alt="Alunos e monitor na passarela da estação" loading="lazy" width="800" height="469">
+              <img src="assets/img/eta-2.jpg" alt="Alunos caminhando ao lado dos tanques de tratamento" loading="lazy" width="800" height="469">
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ XADREZ ============ -->
+  <section class="secao xadrez" id="xadrez">
+    <div class="container">
+      <div class="xadrez-grade">
+        <div class="revelar">
+          <span class="selo-novo">Novo no site</span>
+          <p class="sobretitulo">Xadrez Fliegen</p>
+          <h2>Aprenda xadrez <span class="ver">jogando</span></h2>
+          <p class="intro">O xadrez treina concentração, planejamento e raciocínio lógico, as mesmas habilidades das olimpíadas. Na nossa área de xadrez, qualquer aluno aprende com aulas práticas, passo a passo, e depois treina com problemas e partidas. Gratuito, sem cadastro e feito para o celular.</p>
+          <ul class="recursos-xadrez">
+            <li><a class="recurso" href="xadrez/aulas.html"><span class="glifo" aria-hidden="true">♜</span><span><strong>Aulas práticas</strong><span class="desc">19 aulas em 4 módulos: as peças, fundamentos, lances especiais e táticas.</span></span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></li>
+            <li><a class="recurso" href="xadrez/treinar.html"><span class="glifo" aria-hidden="true">♞</span><span><strong>Treinar</strong><span class="desc">Problemas de mate em 1 e em 2, partidas contra o computador e jogo em dupla.</span></span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></li>
+            <li><a class="recurso" href="xadrez/regras.html"><span class="glifo" aria-hidden="true">♛</span><span><strong>Regras</strong><span class="desc">Todas as regras num só lugar, com exemplos que você toca e move.</span></span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></li>
+          </ul>
+          <div class="botoes"><a class="btn btn-azul" href="xadrez/aulas.html">Começar as aulas <svg class="ic"><use href="#i-seta"/></svg></a></div>
+        </div>
+        <div class="tabuleiro-arte revelar" aria-hidden="true">
+          <div class="tabuleiro-deco"><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl alvo"></span><span class="es"></span><span class="cl"><b class="pp">♚</b></span><span class="es"></span><span class="es"><b class="pp">♟</b></span><span class="cl"><b class="pp">♟</b></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"><b class="pp">♟</b></span><span class="es"><b class="pp">♟</b></span><span class="cl"><b class="pp">♟</b></span><span class="cl"></span><span class="es"></span><span class="cl"><b class="pp">♞</b></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="es"></span><span class="cl"><b class="pb">♛</b></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="cl"><b class="pb">♟</b></span><span class="es"><b class="pb">♟</b></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"><b class="pb">♟</b></span><span class="cl"><b class="pb">♟</b></span><span class="es"><b class="pb">♟</b></span><span class="es"></span><span class="cl"></span><span class="es"></span><span class="cl"></span><span class="es"><b class="pb">♜</b></span><span class="cl"></span><span class="es"><b class="pb">♚</b></span><span class="cl"></span></div>
+          <div class="balao">Desafio: as brancas jogam e dão mate em 1.<small>Resolva na área de treino!</small></div>
+        </div>
+      </div>
+      <div class="campeonato revelar">
+        <span class="trofeu"><svg class="ic" aria-hidden="true"><use href="#i-trofeu"/></svg></span>
+        <div>
+          <h3>Do primeiro lance ao xeque-mate</h3>
+          <p>As peças, capturar e defender, xeque e xeque-mate, roque, en passant, garfo e cravada. Cada aula tem exercícios curtos no tabuleiro.</p>
+        </div>
+        <a class="btn btn-verde" href="xadrez/aulas.html">Ver as aulas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÍDIA ============ -->
+  <section class="secao" id="midia">
+    <div class="container midia-grade">
+      <div class="fixo revelar">
+        <p class="sobretitulo">Imprensa</p>
+        <h2>Instituto Fliegen na mídia</h2>
+        <p class="intro">Reconhecido nacionalmente, o Instituto Fliegen se destaca pela atuação educacional e pelo incentivo à participação de estudantes em Olimpíadas do Conhecimento, gerando impacto positivo na formação de crianças e jovens.</p>
+      </div>
+      <div class="materias">
+        <article class="materia revelar"><img src="assets/img/midia-1.jpg" alt="Recorte da matéria no Correio Braziliense" loading="lazy"><div class="corpo"><h3>Correio Braziliense</h3><p>Um dos jornais mais tradicionais do país destacou estratégias educacionais voltadas à preparação de estudantes para competições escolares, alinhadas à proposta do Instituto Fliegen.</p></div></article>
+        <article class="materia revelar"><img src="assets/img/midia-2.jpg" alt="Recorte da matéria no portal Terra" loading="lazy"><div class="corpo"><h3>Terra</h3><p>Portal de notícias de alcance nacional, o Terra destacou estratégias educacionais e iniciativas voltadas ao desempenho escolar e ao desenvolvimento intelectual de estudantes.</p></div></article>
+        <article class="materia revelar"><img src="assets/img/midia-3.jpg" alt="Recorte da matéria na Jovem Pan" loading="lazy"><div class="corpo"><h3>Jovem Pan</h3><p>Veículo de grande alcance nacional, a Jovem Pan destacou a importância do preparo acadêmico e do estímulo educacional, dando visibilidade a práticas alinhadas ao trabalho do Instituto Fliegen.</p></div></article>
+        <article class="materia revelar"><img src="assets/img/midia-4.jpg" alt="Recorte da matéria no R7" loading="lazy"><div class="corpo"><h3>R7</h3><p>Ligado ao Grupo Record, o R7 abordou a preparação para olimpíadas escolares, reforçando a importância de projetos educacionais estruturados e de impacto social.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABRANGÊNCIA ============ -->
+  <section class="secao alt" id="abrangencia">
+    <div class="container abrangencia">
+      <img class="revelar" src="assets/img/mapa-cotia.jpg" alt="Mapa do município de Cotia, com destaque para Cotia e Caucaia do Alto" loading="lazy" width="700" height="1063">
+      <div class="revelar">
+        <p class="sobretitulo">Onde atuamos</p>
+        <h2>Abrangência</h2>
+        <p class="intro">Atendemos estudantes de Cotia e região, na Grande São Paulo.</p>
+        <div class="dados-cotia">
+          <div><strong>Cotia</strong><span>e região</span></div>
+          <div><strong>274.413</strong><span>habitantes em Cotia</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APRESENTAÇÃO ============ -->
+  <section class="secao" id="apresentacao">
+    <div class="container">
+      <div class="apresentacao revelar">
+        <div>
+          <p class="sobretitulo" style="color:var(--marinho)">Material institucional</p>
+          <h2>Conheça o Instituto em detalhes</h2>
+          <p>Baixe a apresentação institucional com nossa proposta, o processo seletivo, as conquistas de 2024 e 2025, as oficinas e passeios e a presença na mídia. Ideal para compartilhar com escolas, famílias e apoiadores.</p>
+          <div class="botoes">
+            <a class="btn btn-azul" href="downloads/apresentacao-instituto-fliegen-2025.pdf" download><svg class="ic"><use href="#i-baixar"/></svg> Baixar apresentação (PDF)</a>
+            <a class="btn btn-claro" href="downloads/apresentacao-instituto-fliegen-2025.pdf" target="_blank" rel="noopener">Ver no navegador</a>
+          </div>
+          <p class="meta">PDF · 16 páginas · 2,6 MB</p>
+        </div>
+        <div class="capa" aria-hidden="true">
+          <img src="assets/img/capa-apresentacao.jpg" alt="" loading="lazy" width="1200" height="675">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="secao alt" id="contato">
+    <div class="container contato">
+      <div class="revelar">
+        <p class="sobretitulo">Fale com a gente</p>
+        <h2>Contato e localização</h2>
+        <ul class="canais">
+          <li><a href="https://www.instagram.com/institutofliegen" target="_blank" rel="noopener"><span class="bola"><svg class="ic" aria-hidden="true"><use href="#i-insta"/></svg></span><span>@institutofliegen<small>Instagram</small></span></a></li>
+          <li><a href="https://wa.me/5511930926753" target="_blank" rel="noopener"><span class="bola"><svg class="ic" aria-hidden="true"><use href="#i-zap"/></svg></span><span>(11) 93092-6753<small>WhatsApp</small></span></a></li>
+          <li><a href="mailto:contato@institutofliegen.com.br"><span class="bola"><svg class="ic" aria-hidden="true"><use href="#i-email"/></svg></span><span>contato@institutofliegen.com.br<small>E-mail</small></span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Open+Mall+The+Square+SP-270+km+22+Cotia+SP" target="_blank" rel="noopener"><span class="bola"><svg class="ic" aria-hidden="true"><use href="#i-pino"/></svg></span><span>Open Mall The Square, SP-270, km 22 – Bloco A, Sala 415<small>Lageadinho, Cotia/SP · CEP 06709-015</small></span></a></li>
+        </ul>
+        <div class="botoes">
+          <a class="btn btn-verde" href="https://fliegen.alphalumen.org.br" target="_blank" rel="noopener">Fazer inscrição <svg class="ic"><use href="#i-seta"/></svg></a>
+          <a class="btn btn-contorno" href="https://wa.me/5511930926753" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="mapa revelar">
+        <iframe title="Mapa: Open Mall The Square, Cotia/SP" src="https://www.google.com/maps?q=Open+Mall+The+Square,+Cotia+-+SP&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <img class="logo-claro" src="assets/img/logo-fliegen-claro.png" alt="Instituto Fliegen" width="900" height="325" loading="lazy">
+        <p>Projeto educacional social, sem fins lucrativos, que prepara estudantes de escolas públicas de Cotia e região para as Olimpíadas do Conhecimento.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#programa">Programa</a></li>
+          <li><a href="#processo">Processo seletivo</a></li>
+          <li><a href="#conquistas">Conquistas</a></li>
+          <li><a href="xadrez/index.html">Xadrez Fliegen</a></li>
+          <li><a href="xadrez/aulas.html">Aulas de xadrez</a></li>
+          <li><a href="downloads/apresentacao-instituto-fliegen-2025.pdf" download>Apresentação (PDF)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5511930926753" target="_blank" rel="noopener">(11) 93092-6753</a></li>
+          <li><a href="mailto:contato@institutofliegen.com.br">contato@institutofliegen.com.br</a></li>
+          <li><a href="https://www.instagram.com/institutofliegen" target="_blank" rel="noopener">Instagram</a></li>
+          <li>SP-270, km 22 – Cotia/SP</li>
+        </ul>
+      </div>
+    </div>
+    <div class="base">
+      <span>© <span id="ano">2026</span> Instituto Fliegen. Todos os direitos reservados.</span>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js?v=3"></script>
+</body>
+</html>
